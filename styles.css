@@ -122,9 +122,6 @@ a:hover {
   background-color: hsl(0, 0%, 20%);
   color: #fff;
 }
-.block--github:hover > .block__overlay {
-  transform: translateY(-100%);
-}
 
 .block--twitter,
 .block--twitter > .block__overlay {
@@ -132,17 +129,11 @@ a:hover {
   color: #fff;
   box-shadow: none;
 }
-.block--twitter:hover > .block__overlay {
-  transform: translateX(-100%);
-}
 
 .block--instagram,
 .block--instagram > .block__overlay {
   background-color: hsl(326, 57%, 48%);
   color: #fff;
-}
-.block--instagram:hover > .block__overlay {
-  transform: translateY(100%);
 }
 
 .block--linkedin,
@@ -150,17 +141,11 @@ a:hover {
   background-color: hsl(201, 100%, 35%);
   color: #fff;
 }
-.block--linkedin:hover > .block__overlay {
-  transform: translateX(100%);
-}
 
 .block--blog,
 .block--blog > .block__overlay {
   background-color: hsl(2, 61%, 60%);
   color: #fff;
-}
-.block--blog:hover > .block__overlay {
-  transform: translateY(-100%);
 }
 
 .block--other,
@@ -168,10 +153,32 @@ a:hover {
   background-color: hsl(53, 93%, 54%);
   color: #333;
 }
-.block--other:hover > .block__overlay {
-  transform: translateX(100%);
-}
 
+@media (hover: hover) {
+  .block--github:hover > .block__overlay {
+    transform: translateY(-100%);
+  }
+
+  .block--twitter:hover > .block__overlay {
+    transform: translateX(-100%);
+  }
+
+  .block--instagram:hover > .block__overlay {
+    transform: translateY(100%);
+  }
+
+  .block--linkedin:hover > .block__overlay {
+    transform: translateX(100%);
+  }
+
+  .block--blog:hover > .block__overlay {
+    transform: translateY(-100%);
+  }
+
+  .block--other:hover > .block__overlay {
+    transform: translateX(100%);
+  }
+}
 
 @media (min-width: 630px) {
   .block {
